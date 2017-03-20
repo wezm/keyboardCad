@@ -1,4 +1,7 @@
 #!/usr/bin/runghc
+
+{-# LANGUAGE FlexibleContexts #-}
+
 import Graphics.Implicit.Primitives
 import Graphics.Implicit.Export
 import Control.Applicative
@@ -9,16 +12,16 @@ import Options
   {-- begin argument parsing --}
 
 data MainOptions = MainOptions {
-  optHandAngle     :: Float,
-  optThumbAngle    :: Float,
-  optHandSep       :: Float,
-  optKeySep        :: Float,
-  optFingerSep     :: Float,
-  optBorderWidth   :: Float,
-  optBoltHoleRad   :: Float,
-  optPointerHeight :: Float,
-  optRingHeight    :: Float,
-  optPinkyHeight   :: Float,
+  optHandAngle     :: Double,
+  optThumbAngle    :: Double,
+  optHandSep       :: Double,
+  optKeySep        :: Double,
+  optFingerSep     :: Double,
+  optBorderWidth   :: Double,
+  optBoltHoleRad   :: Double,
+  optPointerHeight :: Double,
+  optRingHeight    :: Double,
+  optPinkyHeight   :: Double,
   optSVG           :: Bool,
   optPNG           :: Bool,
   optDir           :: String
